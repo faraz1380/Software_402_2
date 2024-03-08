@@ -1,0 +1,131 @@
+html {
+	scroll-behavior: smooth;
+	}
+	:root{
+	scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important;
+	scrollbar-width: thin !important;
+	}
+	::-webkit-scrollbar {
+	height: 12px;
+	width: 1px;
+	background: #000;
+	}
+	::-webkit-scrollbar-thumb {
+	background: gray;
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+	}
+	::-webkit-scrollbar-corner {
+	background: #000;
+	}
+	
+
+	
+	/*DEFAULT*/
+	body{
+	margin:0;
+	overflow:hidden;
+	background-color:#000;
+	font-family: 'PT Sans Narrow', sans-serif;
+	}
+	a{
+	text-decoration:none;
+	transition:0.5s;
+	}
+	table{
+	width:100%;
+	border-collapse:collapse;
+	}
+	table td{
+	width:50%;
+	position:relative;
+	}
+
+	em{
+	color: rgba(85, 60, 232, 0.9);
+	font-style:normal;
+	text-transform:uppercase;
+	}
+
+	
+	/*HEADER*/
+	header{
+	width:100%;
+	display:flex !important;
+	align-items:center;
+	justify-content:center;
+	}
+	
+	header .nav{
+	margin:auto;
+	position:fixed;
+	top:1em;
+	width:40%;
+	box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+	background:#1e1e1e;
+	border-radius:40px;
+	padding:5px;
+	transition:0.5s;
+	z-index:999;
+	display: flex; /* Added */
+	justify-content: center; /* Added */
+	align-items: center; /* Added */
+	height: 50px;
+	}
+	
+	header .nav a{
+	display:inline-block;
+	margin:0px 20px;
+	text-decoration:none;
+	color:#fff;
+	transition:0.5s;
+	}
+	
+	header .nav a:hover:not(:first-child){
+	color:#8a82fc;
+	}
+	
+	header .nav a.active{
+	box-sizing: border-box;
+	transition: all 0.2s ease-in-out;
+	appearance: none;
+	-webkit-appearance: none;
+	padding:10px 20px;
+	border-radius:40px;
+	border:1px solid gray;
+	}
+	
+	header .nav a.active:hover{
+	background:rgba(85, 60, 232, 0.9);
+	color:#000;
+	border:1px solid rgba(85, 60, 232, 0.9);
+	}
+	
+	header .nav .dropdown li:before{
+	content:"\f0a4";
+	font-family:"FontAwesome";
+	color:#e9bc79;
+	margin:0px 4px;
+	}
+	
+	header .nav .icon{
+	display:none;
+	}
+	
+	.dropbtn{
+	background:transparent;
+	border:0;
+	outline:0;
+	font-size:17px;
+	margin:0px 10px;
+	color:#fff;
+	transition:0.5s;
+	}
+	
+	.dropbtn:hover{
+	color:#82fcaa;
+	}
+	
+	.dropdown {
+	position: relative;
+	display: inline-block;
+	}
